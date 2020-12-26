@@ -61,6 +61,7 @@ service.interceptors.response.use(
             location.reload()
           })
         })
+        return Promise.reject()
       }
 
       Message({
@@ -75,7 +76,6 @@ service.interceptors.response.use(
     }
   },
   error => {
-    console.log('err' + error) // for debug
     Message({
       message: error.message,
       type: 'error',

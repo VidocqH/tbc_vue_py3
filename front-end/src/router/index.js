@@ -179,8 +179,8 @@ export const constantRoutes = [
     component: Layout,
     children: [
       {
-        path: 'https://panjiachen.github.io/vue-element-admin-site/#/',
-        meta: { title: 'External Link', icon: 'link' }
+        path: 'https://github.com/VidocqH/tbc_vue_py3',
+        meta: { title: 'Github Page', icon: 'link' }
       }
     ]
   },

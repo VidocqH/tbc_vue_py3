@@ -44,9 +44,11 @@
       <el-button :loading="loading" type="primary" style="width:100%;margin-bottom:20px;" @click.native.prevent="handleLogin">Login</el-button>
       <hr style="border-color:grey;">
       <div style="text-align:center;margin-bottom:30px;margin-top:20px">
-        <el-button :loading="loading" type="success" style="color:white;">
-          <router-link to="/register">Create New Account</router-link>
-        </el-button>
+        <router-link to="/register">
+          <el-button :loading="loading" type="success" style="color:white;">
+            Create New Account
+          </el-button>
+        </router-link>
       </div>
     </el-form>
   </div>

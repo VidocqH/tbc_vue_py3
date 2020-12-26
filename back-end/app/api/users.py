@@ -31,22 +31,10 @@ def create_user():
     response.headers['Location'] = url_for('api.get_user', id=user.id)
     return response
 
-# @bp.route('/users', methods=['GET'])
-# @token_auth.login_required
-# def get_users():
-#     page = request.args.get('page', 1, type=int)
-#     per_page = min(request.args.get('per_page', 10, type=int), 100)
-#     users = session.query(User).filter(User.id >= (page-1 * per_page), User.id < (page * per_page))
-#     res = [user.to_dict() for user in users]
-#     return jsonify({'data':res, 'code':20000 })
-
 @bp.route('/users/<int:id>', methods=['GET'])
 @token_auth.login_required
 def get_user(id):
-    #user = User.query.get_or_404(id)
     user = session.query(User).filter(User.id == id).first()
-    # if g.current_user == user:
-    #     return jsonify(User.query.get_or_404(id).to_dict())
     if user == None:
         return error_response(404, 'User not found!')
     return jsonify({'data': user.to_dict(), 'code': 20000})

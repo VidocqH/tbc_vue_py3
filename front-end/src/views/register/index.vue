@@ -53,9 +53,11 @@
 
       <el-button :loading="loading" type="primary" style="width:100%;margin-bottom:20px;" @click.native.prevent="handleRegister">Register</el-button>
       <div>
-        <el-button :loading="loading" type="danger" style="width:100%;margin-bottom:20px;">
-          <router-link to="/login">Cancel</router-link>
-        </el-button>
+        <router-link to="/login">
+          <el-button :loading="loading" type="danger" style="width:100%;margin-bottom:20px;">
+            Cancel
+          </el-button>
+        </router-link>
       </div>
     </el-form>
   </div>

@@ -199,7 +199,7 @@ export default {
       this.multipleSelections = val
     },
     startCollect() {
-      this.$set(this, 'isRunning', true)
+      // this.$set(this, 'isRunning', true)
       if (this.multipleSelections.length === 0) {
         this.$notify.error({
           title: 'Failed',
