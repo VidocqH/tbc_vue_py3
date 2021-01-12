@@ -3,6 +3,8 @@ Software design homework
 
 Collector of TB stores, mainly focusing in the openning date of the store. Datas are from TB and Kandianbao.
 
+![Screenshot](https://github.com/VidocqH/tbc_vue_py3/blob/master/images/screenshot.png)
+
 # Usage
 ```bash
 git clone https://github.com/VidocqH/tbc_vue_py3
