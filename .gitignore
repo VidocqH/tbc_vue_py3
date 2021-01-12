@@ -4,3 +4,4 @@ userdata/
 .env
 env/
 *.db
+.DS_Store
