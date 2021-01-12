@@ -5,3 +5,4 @@ userdata/
 env/
 *.db
 .DS_Store
+*.swp
