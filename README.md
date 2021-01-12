@@ -5,8 +5,8 @@ Collector of TB stores, mainly focusing in the openning date of the store. Datas
 
 # Usage
 ```bash
-git clone https://github.com/VidocqH/tnc_vue_py3
-cd tnc_vue_py3
+git clone https://github.com/VidocqH/tbc_vue_py3
+cd tbc_vue_py3
 ```
 
 ## Front-End service
